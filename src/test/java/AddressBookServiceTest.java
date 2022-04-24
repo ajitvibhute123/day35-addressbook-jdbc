@@ -1,9 +1,6 @@
 
 
 
-
-
-
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
@@ -27,7 +24,7 @@ public class AddressBookServiceTest {
     @Test
     public void givenContactNumber_WhenUpdated_ShouldSyncWithDb() {
         AddressBookService addressBookService = new AddressBookService();
-        addressBookService.updateContactNumber("pranav","11111111");
+        addressBookService.updateContactNumber("avi","11111111");
         boolean result = addressBookService.checkAddressBookInSyncWithDB("pranav");
         Assert.assertTrue(result);
     }
